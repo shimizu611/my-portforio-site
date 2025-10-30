@@ -3,7 +3,7 @@ import en from "../i18n/en";
 import ja from "../i18n/ja";
 import { DEFAULT_LOCALE, type Locale } from "../i18n";
 
-type Dict = typeof en;
+
 type Ctx = {
   locale: Locale;
   setLocale: (l: Locale) => void;
