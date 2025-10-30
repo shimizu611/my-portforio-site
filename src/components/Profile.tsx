@@ -3,24 +3,22 @@ import { useLocale } from "../providers/LocaleProvider";
 export function Profile() {
   const { t } = useLocale();
   return (
-    <section className="flex max-w-3xl mb-20 mx-auto my-auto items-center justify-center border rounded-xl border-gray-400">
+    <section className="p-8 mx-auto mb-20 max-w-3xl flex flex-col md:flex-row items-center md:items-start gap-6 px-4 border border-gray-600 rounded-4xl">
       {/* left-side */}
-      <div className="w-1/5 flex-none px-4 ">
+      <div className="shrink-0 md:self-center">
         <img
           src="/images/my-portforio-photo1.jpeg"
           alt="My portrait"
-          className="w-xl px-4 mx-4 h-auto object-contain shadow-1g rounded-full"
+          className="w-28 h-28 my-auto md:w-40 md:h-40 object-cover rounded-full shadow-lg items-center"
         />
       </div>
 
       {/* right-side */}
-      <div className="flex-1 flex flex-col px-15">
+      <div className="flex-1 flex flex-col">
         {/* hero-title */}
         <h1 className="pt-4 text-gray-600 text-lg">{t("profile.me")}</h1>
         {/* subtitle */}
-        <div className="py-4 text-1g">{t("profile.greet")}</div>
-        <div className="mt-6 flex items-center justify-center gap-3">
-        </div>
+        <div className="py-4 text-lg">{t("profile.greet")}</div>
       </div>
     </section>
   );
