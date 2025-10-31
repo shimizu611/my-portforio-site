@@ -7,7 +7,7 @@ export const projects = [
       ja: "メニュー・営業時間・アクセス・お問い合わせ。",
     },
     links: [
-      { label: "Demo", url: "https://bistrodemosite.vercel.app/" },
+      { label: "Demo", url: "https://bistro-demosite.vercel.app/" },
       { label: "GitHub", url: "https://github.com/shimizu611/bistro_demosite" },
     ],
   },
